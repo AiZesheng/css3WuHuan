@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五环</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			border: 10px solid #000;
+			border-radius: 50%;
+			position: absolute;
+		}
+		div:after{
+			width: 200px;
+			height: 200px;
+			border: 10px solid #000;
+			border-radius: 50%;
+			position: absolute;
+			content: "";
+			display: block;
+			left: -10px;
+			top: -10px;
+		}
+		.div1{
+			border-color: blue;
+		}
+		.div1:after{
+			border-color: blue;
+			z-index: 3;
+			border-bottom-color: transparent;
+		}
+		.div2{
+			border-color: black;
+			left: 230px;
+		}
+		.div2:after{
+			border-color: black;
+			z-index: 1;
+			border-left-color: transparent;
+		}
+		.div3{
+			border-color: red;
+			left: 460px;
+		}
+		.div3:after{
+			border-color: red;
+			z-index: 1;
+			border-left-color: transparent;
+		}
+		.div4{
+			border-color: yellow;
+			left: 100px;
+			top: 100px;
+		}
+		.div4:after{
+			border-color: yellow;
+			z-index: 2;
+			border-right-color: transparent;
+		}
+		.div5{
+			border-color: green;
+			top: 100px;
+			left: 330px;
+		}
+		.div5:after{
+			border-color: green;
+			z-index: 1;
+			border-right-color: transparent;
+			border-top-color: transparent; 
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+	<div class="div5"></div>
+</body>
+</html>
